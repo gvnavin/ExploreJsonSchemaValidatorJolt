@@ -56,6 +56,7 @@ fun main() {
 // https://www.hascode.com/2017/01/transforming-and-reducing-json-structures-with-jolt/
 // https://github.com/bazaarvoice/jolt/blob/master/gettingStarted.md
 private fun transform(spec: String, input: String) {
+
     val chainrSpecJSON = JsonUtils.jsonToList(spec)
     val chainr = Chainr.fromSpec(chainrSpecJSON)
 

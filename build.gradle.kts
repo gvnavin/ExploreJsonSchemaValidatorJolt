@@ -23,6 +23,8 @@ dependencies {
 
     implementation("com.networknt:json-schema-validator:1.0.72")
 
+    implementation("org.skyscreamer:jsonassert:1.5.0")
+
 }
 
 tasks.test {
