@@ -8,8 +8,7 @@ import com.networknt.schema.ValidationMessage
 
 const val inputForSchemaValidation = """{
     "id": 1,
-    "name": "Lampshade",
-    "price": 9
+    "name": "Lampshade"
 }"""
 
 const val schema = """{
