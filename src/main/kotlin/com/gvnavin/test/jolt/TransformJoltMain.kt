@@ -47,9 +47,7 @@ val spec = """
 """.trimIndent()
 
 fun main() {
-
     transform(spec, input)
-
 }
 
 // https://docs.google.com/presentation/d/1sAiuiFC4Lzz4-064sg1p8EQt2ev0o442MfEbvrpD1ls/edit#slide=id.g94901479_2113

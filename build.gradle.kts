@@ -9,10 +9,15 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+    maven {
+        url = uri("http://dl.bintray.com/mbuhot/maven")
+    }
 }
 
 dependencies {
     testImplementation(kotlin("test"))
+
+    implementation("mbuhot:eskotlin:0.7.0")
 
     implementation("com.bazaarvoice.jolt:jolt-core:0.1.7")
     // https://mvnrepository.com/artifact/com.bazaarvoice.jolt/json-utils
