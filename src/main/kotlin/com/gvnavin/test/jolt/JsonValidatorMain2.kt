@@ -5,7 +5,11 @@ import net.pwall.json.schema.JSONSchema
 const val inputForSchemaValidation2 = """{
     "id": 1,
     "name": "Lampshade",
-    "price": 10
+    "price": 10,
+    "list": [1, 2, 3],
+    "obj": {
+        "key": "value"
+    }
 }"""
 
 const val schema2 = """{
@@ -26,9 +30,24 @@ const val schema2 = """{
             "type": "number",
             "minimum": 0,
             "exclusiveMinimum": 0
+        },
+        "list": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        },
+        "obj": {
+            "type": "object",
+            "properties": {
+                "key": {
+                    "type": "string"
+                }
+            },
+            "required": ["key"]
         }
     },
-    "required": ["id", "name", "price"]
+    "required": ["id", "name", "price", "obj"]
 }"""
 
 // https://www.baeldung.com/introduction-to-json-schema-in-java
